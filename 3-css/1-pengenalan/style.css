@@ -1,0 +1,26 @@
+.warna-hijau {
+  color: green;
+}
+
+.box {
+  background-color: red;
+  display: inline-block;
+
+  padding: 20px;
+  margin: 20px;
+  border: 5px solid black;
+
+  width: 100px;
+  height: 100px;
+}
+
+/* section diplay */
+.section-display {
+  background-color: lightblue;
+}
+.block {
+  display: block;
+}
+.inline {
+  display: inline;
+}
