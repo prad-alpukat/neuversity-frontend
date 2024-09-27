@@ -24,3 +24,15 @@
 .inline {
   display: inline;
 }
+.hidden {
+  display: none;
+}
+
+/* section-flex */
+.section-flex {
+  background-color: lightcoral;
+  display: flex;
+
+  margin-top: 50px;
+  justify-content: end;
+}
