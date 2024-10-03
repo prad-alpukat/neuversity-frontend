@@ -1,3 +1,8 @@
+/* selector semua element */
+* {
+  box-sizing: border-box;
+}
+
 .container {
   max-width: 1000px;
   margin: auto;
@@ -16,4 +21,19 @@
 }
 .border-box {
   box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+  gap: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.grid .box {
+  width: 100%;
 }
