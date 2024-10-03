@@ -1,0 +1,19 @@
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin-bottom: 14px;
+  padding: 16px;
+}
+
+.content-box {
+  box-sizing: content-box;
+}
+.border-box {
+  box-sizing: border-box;
+}
