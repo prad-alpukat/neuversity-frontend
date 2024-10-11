@@ -1,0 +1,85 @@
+/* BOX MODEL */
+.box {
+  width: 300px;
+  padding: 20px 40px 60px 40px;
+  margin: 16px auto 32px auto;
+  border: 5px solid blue;
+  background-color: lightgray;
+  box-sizing: border-box;
+}
+
+/* DISPLAY */
+.block-element {
+  display: block;
+  background-color: lightblue;
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+.inline-element {
+  display: inline;
+  background-color: lightgreen;
+  padding: 5px;
+}
+
+/* FLOAT */
+.left {
+  float: left;
+  width: 45%;
+  background-color: lightcoral;
+  padding: 10px;
+}
+
+.right {
+  float: right;
+  width: 45%;
+  background-color: lightblue;
+  padding: 10px;
+}
+
+.clear-both {
+  clear: both;
+  background-color: lightyellow;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+/* FLEXBOX */
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+  padding: 20px;
+  gap: 20px;
+}
+
+.item {
+  background-color: lightgreen;
+  padding: 20px;
+  text-align: center;
+}
+
+/* GRID */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 24px;
+  column-gap: 16px;
+}
+.grid-item {
+  background-color: lightcoral;
+  padding: 20px;
+  text-align: center;
+}
+
+/* responsive */
+@media (max-width: 700px) {
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}

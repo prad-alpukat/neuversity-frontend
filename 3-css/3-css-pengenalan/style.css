@@ -1,0 +1,11 @@
+a {
+  background: lightcoral;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+a:hover {
+  opacity: 0.5;
+}

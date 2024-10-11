@@ -1,0 +1,29 @@
+nav ul li a {
+  display: inline-block;
+  padding: 10px;
+  background-color: lightcoral;
+  color: white;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+* {
+  font-family: sans-serif;
+}
+
+.banner {
+  display: block;
+  width: 50%;
+  height: 300px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: 68px;
+}
+
+h2 {
+  font-size: 32px;
+}

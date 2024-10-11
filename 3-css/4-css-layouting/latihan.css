@@ -1,0 +1,76 @@
+/* Box Model untuk mengatur padding, margin, border */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+
+  /* biar footer selalu dibawah */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 24px 0;
+  text-align: center;
+  background-color: lightblue;
+}
+
+.navbar {
+  background-color: darkblue;
+  padding: 10px;
+  text-align: center;
+}
+
+.navbar ul li {
+  list-style: none;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.navbar a:hover {
+  opacity: 0.5;
+}
+
+.layout-utama {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 16px;
+  gap: 32px;
+}
+
+.sidebar {
+  background-color: lightgray;
+  padding: 16px;
+}
+
+.card {
+  background-color: lightgreen;
+  padding: 16px;
+  width: 100%;
+  text-align: center;
+}
+.container-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  margin-top: 32px;
+}
+
+footer {
+  padding: 16px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: auto;
+}

@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+h1 {
+  color: blue;
+  text-align: center;
+}
+
+.highlight {
+  color: red;
+  font-weight: 800;
+}
+
+#special {
+  background: url("https://thumbs.dreamstime.com/b/modern-simple-geometric-vector-seamless-pattern-gold-line-texture-white-background-light-abstract-wallpaper-modern-simple-123643404.jpg");
+  padding: 10px;
+  height: 200px;
+  background-size: 500px;
+}
+
+* {
+  font-family: Montserrat, sans-serif;
+}
+
+h1,
+p {
+  /* margin-bottom: 34px; */
+  margin: 0 0 34px 0;
+}
+
+.container p {
+  color: green;
+  /* todo kasih border */
+  border: 1px solid black;
+}
+
+.container span {
+  font-style: italic;
+}
+
+a[href] {
+  text-decoration: none;
+  color: white;
+  padding: 16px !important;
+  background-color: lightcoral;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+a.link-style {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+a:hover {
+  background-color: rgb(141, 70, 70);
+  transition: 0.5s all ease-in-out;
+}
+
+.img-banner {
+  display: block;
+  width: 50%;
+  height: 300px;
+  object-fit: cover;
+  object-position: bottom;
+  border-radius: 16px;
+  margin-top: 34px;
+}

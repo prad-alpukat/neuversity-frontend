@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Selector</title>
+
+    <!-- css internal -->
+    <style>
+      #judul {
+        color: red;
+      }
+
+      .text {
+        color: blue;
+      }
+
+      span.text {
+        text-decoration: underline;
+      }
+
+      * {
+        border: 1px solid lightgray;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Simple Selector</h1>
+
+    <h2 id="judul">Hello World</h2>
+
+    <div>
+      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, earum.</p>
+      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, aliquam.</p>
+    </div>
+
+    <div>
+      <span class="text">hello world</span>
+      <span>ini span</span>
+    </div>
+  </body>
+</html>

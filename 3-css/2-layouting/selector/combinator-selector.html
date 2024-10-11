@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Combinator Selector</title>
+
+    <!-- style internal -->
+    <style>
+      div p {
+        color: red;
+      }
+
+      .div2 > p {
+        color: blue;
+      }
+
+      div + p {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Combinator Selector</h1>
+
+    <div>
+      <p>paragraf 1</p>
+      <p>paragraf 2</p>
+      <p>paragraf 3</p>
+    </div>
+
+    <div class="div2">
+      <p>paragraf 4</p>
+      <p>paragraf 5</p>
+      <p>paragraf 6</p>
+    </div>
+
+    <p>paragraf 7</p>
+    <p>paragraf 8</p>
+    <p>paragraf 9</p>
+  </body>
+</html>

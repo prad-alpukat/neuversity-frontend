@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+/* header */
+header {
+  background-color: gray;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+}
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.btn-mobile {
+  display: none;
+  background-color: transparent;
+  border: none;
+  font-size: 32px;
+  color: white;
+  cursor: pointer;
+}
+
+@media (width < 768px) {
+  .btn-mobile {
+    display: block;
+  }
+  header ul {
+    display: none;
+  }
+}
+
+.sec-hero {
+  background-image: url("https://picsum.photos/1020");
+  height: 90vh;
+  background-size: cover;
+  color: white;
+  position: relative;
+}
+
+.sec-hero .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  z-index: 10;
+  position: relative;
+}
+
+.sec-hero::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

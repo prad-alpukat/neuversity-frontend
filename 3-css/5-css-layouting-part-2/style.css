@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* simple reset css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  width: 80vw;
+  margin: 0 auto 72px;
+}
+
+h2 {
+  margin-bottom: 24px;
+}
+
+.flex {
+  display: flex;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: lightcoral;
+  border: 1px solid black;
+  font-size: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* flex direction */
+.flex-direction {
+  gap: 16px;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* flex wrap */
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-wrap .box {
+  width: 20%;
+}
+
+/* latihan flex */
+.wrapper-flex-latihan {
+  height: 800px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.flex-latihan {
+  justify-content: space-between;
+}
+
+/* grid */
+.grid {
+  display: grid;
+}
+
+/* template column */
+.template-column {
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 16px;
+  column-gap: 48px;
+}
+.template-column .box {
+  width: 100%;
+}
+
+/* grid column */
+.grid-column {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+.grid-column .box {
+  width: 100%;
+}
+.grid-column .box:nth-child(1),
+.grid-column .box:nth-child(4) {
+  background-color: lightblue;
+  grid-column: 1/3;
+}
+
+@media (width < 768px) {
+  .grid-column {
+    grid-template-columns: 1fr;
+  }
+  .grid-column .box:nth-child(1),
+  .grid-column .box:nth-child(4) {
+    grid-column: auto;
+  }
+}
